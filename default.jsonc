@@ -1,0 +1,41 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":configMigration",
+    ":pinDevDependencies"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "packageRules": [
+    {
+      "groupName": "cloudflare dependencies",
+      "packagePatterns": [
+        "@cloudflare/workers-types",
+        "wrangler"
+      ],
+      "automerge": true
+    },
+    {
+      "groupName": "build and testing dependencies",
+      "packagePatterns": [
+        "typescript",
+        "vite",
+        "vite-plugin-dts",
+        "vite-tsconfig-paths",
+        "@cloudflare/vite-plugin",
+        "vitest"
+      ],
+      "automerge": true
+    },
+    {
+      "groupName": "changesets dependencies",
+      "packagePatterns": [
+        "@changesets/changelog-github",
+        "@changesets/cli"
+      ],
+      "automerge": true
+    }
+  ]
+}
