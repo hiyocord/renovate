@@ -40,15 +40,7 @@
     },
     {
       "groupName": "{{manager}} dependencies",
-      "packageRules": [
-        {
-          "groupName": "{{manager}} dependencies",
-          "groupSlug": "{{manager}}",
-          "matchPackagePatterns": [
-            "*"
-          ]
-        }
-      ],
+      "groupSlug": "{{manager}}",
       "separateMajorMinor": false,
       "automerge": true
     }
