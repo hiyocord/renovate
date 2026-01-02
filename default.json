@@ -37,6 +37,11 @@
         "@changesets/cli"
       ],
       "automerge": true
+    },
+    {
+      "groupName": "pip dependencies",
+      "matchManagers": ["pip"],
+      "automerge": true
     }
   ]
 }
